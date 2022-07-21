@@ -1,0 +1,11 @@
+---
+# defaults file for ansible-windows-default
+choco_packages:
+  - firefox
+  - git
+  - rainmeter
+
+scoop_packages:
+  - autohotkey
+  - komorebi
+  - python39

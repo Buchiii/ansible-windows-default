@@ -1,0 +1,17 @@
+---
+# tasks file for ansible-windows-default
+- name: Windows | default | install chocolatey packages
+  win_chocolatey:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ choco_packages }}"
+
+- name: Add the extras bucket
+  community.windows.win_scoop_bucket:
+    name: extras
+
+- name: Windows | default | install scoop packages
+  community.windows.win_scoop:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ scoop_packages }}"
