@@ -8,7 +8,9 @@
 
 - name: Add the extras bucket
   community.windows.win_scoop_bucket:
-    name: extras
+    name: "{{ item }}"
+    state: present
+  loop: "{{ scoop_buckets }}"
 
 - name: Windows | default | install scoop packages
   community.windows.win_scoop:

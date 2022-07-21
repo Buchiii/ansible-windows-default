@@ -5,6 +5,11 @@ choco_packages:
   - git
   - rainmeter
 
+scoop_buckets:
+  - extras
+  - main
+  - versions
+
 scoop_packages:
   - autohotkey
   - komorebi
