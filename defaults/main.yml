@@ -8,9 +8,14 @@ choco_packages:
 scoop_buckets:
   - extras
   - main
+  - nerd-fonts
   - versions
 
 scoop_packages:
   - autohotkey
+  - Font-Awesome
   - komorebi
   - python39
+  - terminal-icons
+  - vcredist2022
+  - windows-terminal
